@@ -17,6 +17,6 @@ Its a Simple Blocker made to block the google.com website
 CRX is also available !!
 
 
-# Squirtle Style Changer (Chrome Extension)
+# Squirtle Style Changer (Dynamic Style)(Chrome Extension)
 
 Change Any webstied background,font,size and whatever you want to do with squirtle :P ....
