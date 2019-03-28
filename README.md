@@ -25,3 +25,8 @@ Change Any webstied background,font,size and whatever you want to do with squirt
 #Note: Most of the CRX Wont work becoz of the not in chrome store!!
 
 #so better use it as "load Unpacked" option!! 
+
+
+# Checklist (WebPage)
+
+Made of html and js 
