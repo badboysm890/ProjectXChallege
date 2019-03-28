@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="select2/select2.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <style type="text/css">
+        body {
+            padding: 10px;
+            width: 275px;
+            box-sizing: border-box;
+            height: 550px;
+
+        }
+        html, body, pre, code, kbd, samp {
+            font-size: 10px;
+            font-family: 'Press Start 2P', cursive;
+        }
+        td {
+            padding: 3px;
+        }
+        input.inline-text {
+            margin-bottom: 0px;
+        }
+
+        h3 {
+            line-height: normal;
+        }
+        .tdcheckbox {
+            padding-right: 5px;
+        }
+
+        body input, body select {
+            margin: 0px;
+        }
+        body select {
+            width: 189px;
+        }
+        .well {
+            margin-top: 10px;
+            margin-bottom: 0px;
+        }
+        .setting-name {
+            font-size: 22px;
+            font-weight: bold;
+            color: grey;
+            margin-bottom: 20px;;
+        }
+
+        .done-cont {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h3 class="domain">Change Style</h3>
+    <div>
+        Use <select class="setting-type"><option value="global">Global Font</option><option value="custom">Site Specific Font</option><option value="none">No Font</option></select>
+    </div>
+    <div class="well">
+        <div class="setting-name">Global Settings</div>
+        <div class="control-group">
+          <div class='menu1'>
+           <p class='description'>
+             <label><h1>Font colors & Backgrounds</h1></label></br>
+             <div class="button1 color1" id="Button_1"><button>Fonts Color</button></div>
+               <ul class='menus'>
+                 <li class = "item1">RED<input type="range" id = "bar1"  min="0" max="255" value="0" step = "1"/> <span id = "redRange"> 0 </span></li>
+                 <li class = "item2">GREEN<input type="range" id = "bar2" min="0" max="255" value="0" step = "1"/><span id = "greenRange">0</span> </li>
+                 <li class = "item3">BLUE <input type="range" id = "bar3" min="0" max="255" value="0" step = "1"/><span id = "blueRange">0</span></li>
+               </ul>
+           </p>
+         </div>
+
+
+
+            <label>Font Name <a class="help-tip" rel="tooltip" title="Click to view Google Fonts" href="http://www.google.com/webfonts" target="_blank"><i class="icon-question-sign"></i></a></label>
+            <table><tr><td class="tdcheckbox"><input type="checkbox" class="enable-select" id="font_family_chk"></td><td><select style="width: 189px;" id="font_family" class="inline-text" disabled="disabled"></select></td></tr></table>
+            <div>
+                <a id="custom-font" style="cursor: pointer;">Edit Custom Fonts</a>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label>Font Weight</label>
+            <table>
+                <tr>
+                    <td class="tdcheckbox"><input type="checkbox" id="font_weight_chk"></td>
+                    <td>
+                        <select id="font_weight" class="inline-text" disabled="disabled">
+                            <option value="normal">Normal</option>
+                            <option value="bold">Bold</option>
+                            <option value="bolder">Bolder</option>
+                            <option value="lighter">Lighter</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="control-group">
+            <label>Font Size</label>
+            <table><tr><td class="tdcheckbox"><input type="checkbox" class="enable-text" id="font_size_chk"></td><td><input type="text" id="font_size" class="input-medium inline-text" disabled="disabled"> px</td></tr></table>
+        </div>
+        <div class="control-group">
+            <label>Font Style</label>
+            <table>
+                <tr>
+                    <td class="tdcheckbox"><input type="checkbox" id="font_style_chk"></td>
+                    <td>
+                        <select id="font_style" class="inline-text" disabled="disabled">
+                            <option value="normal">Normal</option>
+                            <option value="italic">Italic</option>
+                            <option value="oblique">Oblique</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+
+          <br>
+          <div class='menu2'>
+          <p class='description'>
+          <div class="button2 color2" id = "Button_2"><button>Background Color</button></div>
+             <ul class='menus'>
+               <li class = "item4">RED  <input type="range" id = "bar4" min="0" max="255" value="0" step = "1" /><span id = "redRange2">0</span></li>
+               <li class = "item5">GREEN<input type="range" id = "bar5" min="0" max="255" value="0" step = "1" /><span id = "greenRange2">0</span></li>
+               <li class = "item6">BLUE <input type="range" id = "bar6" min="0" max="255" value="0" step = "1" /><span id = "blueRange2">0</span></li>
+             </ul>
+          </p>
+          </div>
+          <br>
+            <div class="button3 clear" id = "Button_3"><button>Reset</button></div>
+            <div id="messages"></div>
+        </div>
+
+
+  	<script src='jquery-3.2.1.js'></script>
+  	<script src="popup.js"></script>
+    </div>
+    <div class="done-cont"><button class="btn btn-primary done" type="button">Done</button></div>
+
+
+
+<script type="text/javascript" src="js/default.js"></script>
+</body>
+</html>
