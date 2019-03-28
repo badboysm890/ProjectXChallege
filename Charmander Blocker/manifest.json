@@ -1,0 +1,24 @@
+{
+  "name": "Web Blocker",
+  "version": "0.1",
+  "manifest_version": 2,
+  "description": "Just Add web sites and it will block",
+  "background": {
+	"scripts": ["background.js"]
+  },
+
+  "icons": {
+    "128" : "test.png"
+  },
+  "browser_action": {
+    "default_icon": "test2.png",
+    "default_title": "Charmandor Blocker",
+    "default_popup": "pop.html"  
+  },
+  "permissions": [
+	"webRequest",
+	"webRequestBlocking",
+	"https://www.google.com/*",
+	"https://stackoverflow.com/*"
+  ]
+}
