@@ -20,3 +20,8 @@ CRX is also available !!
 # Squirtle Style Changer (Dynamic Style)(Chrome Extension)
 
 Change Any webstied background,font,size and whatever you want to do with squirtle :P ....
+
+
+#Note: Most of the CRX Wont work becoz of the not in chrome store!!
+
+#so better use it as "load Unpacked" option!! 
